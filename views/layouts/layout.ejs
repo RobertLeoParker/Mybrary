@@ -6,10 +6,14 @@
     <title>Mybrary</title>
 </head>
 <body>
-    Before
-    <br>
-    <%- body %>
-    <br>
-    After
+    <div class="wrapper">
+        <%- include('../partials/header.ejs') %>
+        <div class="layout-sidebar">
+            <main><%- body %></main>
+            <side>sidebar</side>
+        </div>
+        <%- include('../partials/footer.ejs') %>
+    </div>
+0
 </body>
 </html>
